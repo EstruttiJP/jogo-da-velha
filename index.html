@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Jogo da Velha :D</h1>
+        <div class="Win">
+            <div id="WinX">Vitorias do player X: 0</div>
+            <div id="WinO">Vitorias do player O: 0</div>
+        </div>
+        <div id="status">Vez do jogador X</div>
+        <div class="jogo">
+            <div class="cima">
+                <div class="jg" onclick="Posicao(0, 0)"></div>
+                <div class="jg" onclick="Posicao(0, 1)"></div>
+                <div class="jg" onclick="Posicao(0, 2)"></div>
+            </div>
+            <div class="meio">
+                <div class="jg" onclick="Posicao(1, 0)"></div>
+                <div class="jg" onclick="Posicao(1, 1)"></div>
+                <div class="jg" onclick="Posicao(1, 2)"></div>
+            </div>
+            <div class="baixo">
+                <div class="jg" onclick="Posicao(2, 0)"></div>
+                <div class="jg" onclick="Posicao(2, 1)"></div>
+                <div class="jg" onclick="Posicao(2, 2)"></div>
+            </div>
+        </div>
+        <button onclick="Reset()" class="reset"><ion-icon name="reload-outline"></ion-icon></button>
+    </div>
+<script src="script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
